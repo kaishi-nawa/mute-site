@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MUTE</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- TOP背景を先読み（ちらつき軽減） -->
+  <link rel="preload" as="image" href="assets/top.jpg">
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- LOADER -->
+  <div id="loader" class="loader" aria-label="Loading" role="status">
+    <svg class="loader-logo" viewBox="0 0 83 102" aria-hidden="true">
+      <path class="m-left" d="M2.9147 102 V0" stroke="white" stroke-width="5.8294" />
+      <path class="m-tri"  d="M39.64 102 L80.113 0 L80.0853 102" stroke="white" stroke-width="5.8294" />
+    </svg>
+  </div>
+
+  <!-- Fixed background -->
+  <div class="night-bg" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="site-header" aria-label="Site header">
+    <button
+      class="menu-btn"
+      type="button"
+      aria-label="メニューを開く"
+      aria-expanded="false"
+      aria-controls="menuPanel"
+    >
+      <span class="menu-icon" aria-hidden="true">
+        <span class="line l1"></span>
+        <span class="line l2"></span>
+      </span>
+    </button>
+  </header>
+
+  <!-- Overlay -->
+  <div class="menu-overlay" aria-hidden="true"></div>
+
+  <!-- Menu -->
+  <aside class="menu-panel" id="menuPanel" aria-hidden="true">
+    <nav class="menu-nav" aria-label="ページ内ナビゲーション">
+      <ul>
+        <li><a href="#top" data-scroll>TOP</a></li>
+        <li><a href="#concept" data-scroll>CONCEPT</a></li>
+        <li><a href="#product" data-scroll>PRODUCT</a></li>
+        <li><a href="#column" data-scroll>COLUMN</a></li>
+        <li><a href="#faq" data-scroll>FAQ</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="site-main">
+
+    <!-- TOP -->
+    <section id="top" class="hero" aria-label="Top">
+      <div class="hero-center">
+        <img class="brand-logo hero-logo" src="assets/logo.svg" alt="MUTE" />
+      </div>
+    </section>
+
+    <div class="section-gap" aria-hidden="true"></div>
+
+    <!-- CONCEPT -->
+    <section id="concept" class="panel" aria-label="Concept">
+      <div class="container">
+        <h2 class="section-title en reveal" style="--d:0s">C O N C E P T</h2>
+
+        <h3 class="concept-lead reveal" style="--d:.18s">静 け さ を 残 す ス キ ン ケ ア 。</h3>
+
+        <div class="copy reveal" style="--d:.36s">
+          <p>毎日増えていく刺激や予定に、肌も心も少し疲れている。</p>
+          <p>MUTEは、何かを盛り上げるのではなく、</p>
+          <p>世界の音量を少しだけ下げるように、</p>
+          <p>肌を静かな状態へ戻していくスキンケア。</p>
+          <p>大きな変化を追いかける代わりに、</p>
+          <p>「今日は落ち着いていた」と思える日を増やしていく。</p>
+        </div>
+
+        <div class="logo-under reveal" style="--d:.54s" aria-hidden="true">
+          <img src="assets/logo.svg" alt="" />
+        </div>
+
+        <h3 class="quiet-title reveal" style="--d:.10s">M U T E の 静 か な こ だ わ り</h3>
+
+        <p class="quiet-desc reveal" style="--d:.22s">
+          刺激を足すのではなく、乱れにくい肌の土台を整えることをめざした設計です。<br>
+          ナイアシンアミド・ヒト型セラミド・エクトインの3つの成分を軸にしながら、<br>
+          7項目のフリー処方で、ゆらぎやすい日にも選びやすいバランスに整えています。
+        </p>
+
+        <h3 class="quiet-subtitle reveal" style="--d:.34s">肌 の 土 台 を 支 え る ３ つ の 成 分</h3>
+
+        <p class="quiet-subdesc reveal" style="--d:.46s">
+          ローションからセラム、ミルク、クリームまで。この3つの成分を軸に配合バランスを変えることで、<br>
+          「強く変える」のではなく「静かに整える」方向へ。
+        </p>
+      </div>
+
+      <div class="wide" aria-label="Ingredients wide area">
+        <div class="ingredients" aria-label="3つの成分">
+          <div class="ingredient align-right reveal from-top-left" style="--d:.12s">
+            <h3 class="ingredient-name">ナイアシンアミド</h3>
+            <p class="ingredient-desc">キメや質感をなめらかに整え、乾燥によるくすみが目立ちにくい肌を目指します。</p>
+          </div>
+
+          <div class="ingredient align-left reveal from-top-right" style="--d:.42s">
+            <h3 class="ingredient-name">ヒト型セラミド</h3>
+            <p class="ingredient-desc">角層のすき間を満たし、うるおいを抱え込むバリア機能をサポートします。</p>
+          </div>
+
+          <div class="ingredient align-right reveal from-top-left" style="--d:.72s">
+            <h3 class="ingredient-name">エクトイン</h3>
+            <p class="ingredient-desc">乾燥などの外的ストレスから角層の水分環境を守り、ゆらぎにくいコンディションを保ちます。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="free7 reveal" style="--d:.15s" aria-label="7つのフリー処方">
+          <h3 class="free7-title">７ つ の フ リ ー 処 方</h3>
+
+          <p class="free7-lead">
+            肌に余計な負担をかけないために。<br>
+            muteは、日常的に使い続けることを前提に、不要な成分をできるだけ排除しています。
+          </p>
+
+          <div class="free7-rows" role="list" aria-label="7つのフリー項目">
+            <div class="free7-row" role="presentation">
+              <div class="free7-item" role="listitem">グリセリンフリー</div>
+              <div class="free7-item" role="listitem">アルコールフリー</div>
+              <div class="free7-item" role="listitem">パラベンフリー</div>
+            </div>
+            <div class="free7-row" role="presentation">
+              <div class="free7-item" role="listitem">鉱物油フリー</div>
+              <div class="free7-item" role="listitem">香料フリー</div>
+              <div class="free7-item" role="listitem">着色料フリー</div>
+              <div class="free7-item" role="listitem">シリコーンフリー</div>
+            </div>
+          </div>
+
+          <button class="free7-more" type="button" aria-label="全成分を見る">
+            <span>全 成 分 を 見 る</span>
+            <span class="free7-more-plus" aria-hidden="true">＋</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-gap" aria-hidden="true"></div>
+
+    <!-- PRODUCT -->
+    <section id="product" class="panel" aria-label="Product">
+      <div class="container">
+        <h2 class="section-title en reveal" style="--d:0s">P R O D U C T</h2>
+      </div>
+
+      <div class="wide">
+        <div class="carousel" aria-label="Products carousel">
+          <button class="carousel-btn prev" type="button" aria-label="前へ"></button>
+
+          <div class="carousel-viewport" id="productViewport">
+            <div class="carousel-track" id="productTrack">
+              <article class="product-card reveal" style="--d:.10s">
+                <div class="product-img img-slot" aria-label="Noise Cut Cleansing Gel 画像（後で差し替え）"></div>
+                <h3 class="product-name en">Noise Cut Cleansing Gel</h3>
+              </article>
+
+              <article class="product-card reveal" style="--d:.18s">
+                <div class="product-img img-slot" aria-label="Barrier Cream 画像（後で差し替え）"></div>
+                <h3 class="product-name en">Barrier Cream</h3>
+              </article>
+
+              <article class="product-card reveal" style="--d:.26s">
+                <div class="product-img img-slot" aria-label="Calm Wash 画像（後で差し替え）"></div>
+                <h3 class="product-name en">Calm Wash</h3>
+              </article>
+
+              <article class="product-card reveal" style="--d:.34s">
+                <div class="product-img img-slot" aria-label="Quiet Layer Lotion 画像（後で差し替え）"></div>
+                <h3 class="product-name en">Quiet Layer Lotion</h3>
+              </article>
+
+              <article class="product-card reveal" style="--d:.42s">
+                <div class="product-img img-slot" aria-label="Soft Layer Milk 画像（後で差し替え）"></div>
+                <h3 class="product-name en">Soft Layer Milk</h3>
+              </article>
+
+              <article class="product-card reveal" style="--d:.50s">
+                <div class="product-img img-slot" aria-label="Balance &amp; Barrier Serum 画像（後で差し替え）"></div>
+                <h3 class="product-name en">Balance &amp; Barrier Serum</h3>
+              </article>
+            </div>
+          </div>
+
+          <button class="carousel-btn next" type="button" aria-label="次へ"></button>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-gap" aria-hidden="true"></div>
+
+    <!-- COLUMN -->
+    <section id="column" class="panel" aria-label="Column">
+      <div class="container">
+        <h2 class="section-title en reveal" style="--d:0s">C O L U M N</h2>
+      </div>
+
+      <div class="wide">
+        <article class="column-card right">
+          <div class="column-text reveal" style="--d:.12s">
+            <div class="title-en en">Q U I E T&nbsp;&nbsp;M O M E N T S</div>
+            <div class="title-jp">止 ま っ て も い い 時 間 。</div>
+            <p>通知も、締め切りも、今は一度横に置いておく。鏡の前で、肌の調子だけを確かめている数分間は、誰にも急かされない、自分のペースだけが戻ってくる時間です。</p>
+          </div>
+          <div class="column-photo img-slot reveal" style="--d:.24s" aria-label="コラム画像（後で差し替え）"></div>
+        </article>
+
+        <article class="column-card left">
+          <div class="column-photo img-slot reveal" style="--d:.12s" aria-label="コラム画像（後で差し替え）"></div>
+          <div class="column-text reveal" style="--d:.24s">
+            <div class="title-en en">Q U I E T&nbsp;&nbsp;S U P P O R T</div>
+            <div class="title-jp">静 か に 支 え る 、 ３ つ の 軸 。</div>
+            <p>muteのベースには、ナイアシンアミド・ヒト型セラミド・エクトインの3成分を共通して配合しています。ナイアシンアミドはキメと質感を整え、ヒト型セラミドは角層のバリア機能を支えます。エクトインは乾燥や外的ストレスから角層のうるおい環境を守る成分です。</p>
+          </div>
+        </article>
+
+        <article class="column-card right">
+          <div class="column-text reveal" style="--d:.12s">
+            <div class="title-en en">7 - F R E E&nbsp;&nbsp;D E S I G N</div>
+            <div class="title-jp">余 計 な も の を 足 さ な い 設 計 。</div>
+            <p>muteでは、グリセリン・アルコール・パラベン・鉱物油・着色料・香料・シリコーンの7つを配合していません。どれも必ずしも「悪いもの」と決めつけるのではなく、ゆらぎやすい肌でも選びやすいよう、あえて引いた成分です。</p>
+          </div>
+          <div class="column-photo img-slot reveal" style="--d:.24s" aria-label="コラム画像（後で差し替え）"></div>
+        </article>
+      </div>
+    </section>
+
+    <div class="section-gap" aria-hidden="true"></div>
+
+    <!-- FAQ -->
+    <section id="faq" class="panel" aria-label="FAQ">
+      <div class="container">
+        <h2 class="section-title en reveal" style="--d:0s">F A Q</h2>
+
+        <div class="faq reveal" style="--d:.12s">
+          <details class="faq-item">
+            <summary><span class="q">Q</span> どんな肌質の人に向いていますか？</summary>
+            <div class="a">
+              <p><span class="a-label">A</span> 乾燥しやすい方、ゆらぎやすい方、刺激に敏感になりやすい方を主なイメージとして処方設計をしています。</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary><span class="q">Q</span> グリセリンフリーなのに、ちゃんと保湿されますか？</summary>
+            <div class="a">
+              <p><span class="a-label">A</span> はい。ナイアシンアミド、ヒト型セラミド、エクトインなどの成分を組み合わせることで、うるおい感が続くように設計しています。</p>
+            </div>
+          </details>
+        </div>
+
+        <footer class="footer reveal" style="--d:.24s">
+          <small>© MUTE</small>
+        </footer>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/main.js"></script>
+  <!-- 雨エフェクトは一旦OFF（導入前に戻す） -->
+  <!-- <script type="module" src="js/rain-top.js"></script> -->
+</body>
+</html>
